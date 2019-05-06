@@ -47,7 +47,7 @@ namespace wykobi
    static const Float Epsilon_Medium    = 1.0E-10;
    static const Float Epsilon_Low       = 1.0E-07;
    static const Float Epsilon           = Epsilon_Medium;
-   static const Float Infinity          = std::numeric_limits<Float>::infinity();
+   // static const Float Infinity          = std::numeric_limits<Float>::infinity();
 
    /********[ Random resolution constants ]********/
    static const std::size_t RANDOM_RESOLUTION_INT = 1000000000;
