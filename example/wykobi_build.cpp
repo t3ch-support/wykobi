@@ -18,7 +18,8 @@
 */
 
 
-#include "wykobi_instantiate.hpp"
+// This cpp can be included and the main can run correctly.
+#include "wykobi_instantiate.cpp"
 #include <iostream>
 using namespace std;
 using namespace wykobi;
