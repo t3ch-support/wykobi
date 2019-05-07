@@ -28,6 +28,21 @@
 #include "wykobi_utilities.hpp"
 
 
+#include "wykobi_axis_projection_descriptor.inl"
+#include "wykobi_earclipping.inl"
+#include "wykobi_matrix.inl"
+#include "wykobi_nd.inl"
+
+#include "wykobi_clipping.inl"
+#include "wykobi_hull.inl"
+#include "wykobi_minimum_bounding_ball.inl"
+#include "wykobi_normalization.inl"
+
+#include "wykobi_duplicates.inl"
+#include "wykobi.inl"
+#include "wykobi_naive_group_intersections.inl"
+#include "wykobi_ordered_polygon.inl"
+
 namespace wykobi
 {
    #define INSTANTIATE_WYKOBI(T,InputIterator2d,InputIterator3d,OutputIterator2d,OutputIterator3d)\
