@@ -124,7 +124,7 @@ namespace wykobi
 
 } // namespace wykobi
 
-#include "wykobi_matrix.inl"
+// #include "wykobi_matrix.inl"
 
 
 #endif
