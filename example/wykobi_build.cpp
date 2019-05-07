@@ -19,7 +19,9 @@
 
 
 // This cpp can be included and the main can run correctly.
-#include "wykobi_instantiate.cpp"
+// #include "wykobi_instantiate.cpp"
+// The main can also run correctly when only include wykobi.hpp.
+#include "wykobi.hpp"
 #include <iostream>
 using namespace std;
 using namespace wykobi;
