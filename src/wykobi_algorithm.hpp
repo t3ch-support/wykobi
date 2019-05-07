@@ -94,14 +94,14 @@ namespace wykobi
 
 } // namespace wykobi
 
-#include "wykobi_normalization.inl"
-#include "wykobi_hull.inl"
-#include "wykobi_ordered_polygon.inl"
-#include "wykobi_duplicates.inl"
-#include "wykobi_naive_group_intersections.inl"
-#include "wykobi_minimum_bounding_ball.inl"
-#include "wykobi_axis_projection_descriptor.inl"
-#include "wykobi_clipping.inl"
-#include "wykobi_earclipping.inl"
+// #include "wykobi_normalization.inl"
+// #include "wykobi_hull.inl"
+// #include "wykobi_ordered_polygon.inl"
+// #include "wykobi_duplicates.inl"
+// #include "wykobi_naive_group_intersections.inl"
+// #include "wykobi_minimum_bounding_ball.inl"
+// #include "wykobi_axis_projection_descriptor.inl"
+// #include "wykobi_clipping.inl"
+// #include "wykobi_earclipping.inl"
 
 #endif
