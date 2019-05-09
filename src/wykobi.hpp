@@ -1057,6 +1057,7 @@ namespace wykobi
 
    template <typename T> inline bool is_skinny_triangle(const triangle<T,2>& triangle);
 
+   // Here intersect means two segments have intersection point on segment.
    template <typename T>
    inline bool intersect(const T& x1, const T& y1,
                          const T& x2, const T& y2,
@@ -1165,6 +1166,7 @@ namespace wykobi
    template <typename T> inline bool intersect(const plane<T,3>& plane, const sphere<T>& sphere);
    template <typename T> inline bool intersect(const plane<T,3>& plane, const line<T,3>& line);
 
+   // See tutorial for details.
    template <typename T>
    inline bool simple_intersect(const T& x1, const T& y1,
                                 const T& x2, const T& y2,
