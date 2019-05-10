@@ -29,14 +29,20 @@ using namespace wykobi;
 int main(void)
 {
   wykobi::segment<double,2> segment1 = wykobi::make_segment(0.0, 0.0, 2.0, 0.0);
-  wykobi::segment<double,2> segment2 = wykobi::make_segment(1.0, -1.0, 1.0, 2.0);
-  cout << intersect(segment1, segment2) << std::endl;
+  wykobi::segment<double,2> segment2 = wykobi::make_segment(1.0, 1.0, 1.0, -2.0);
+  bool isIntersects = simple_intersect(segment1, segment2);
+  // bool isIntersects = intersect(segment1, segment2);
+  if (isIntersects) {
+    cout << "intersects" << std::endl;
+  } else {
+    cout<< "not intersects" <<endl;
+  }
   // point2d<int> ip = intersection_point(segment1, segment2);
-  double ix, iy;
-  intersection_point(0.0, 0.0, 2.0, 0.0,
-      1.234, -1.0, 1.234, 2.0,
-      ix, iy);
-  cout << ix << ", " << iy << std::endl;
+  // double ix, iy;
+  // intersection_point(0.0, 0.0, 2.0, 0.0,
+  //     1.234, -1.0, 1.234, 2.0,
+  //     ix, iy);
+  // cout << ix << ", " << iy << std::endl;
 
   return 0;
 }
