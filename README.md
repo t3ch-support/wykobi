@@ -1,8 +1,8 @@
 
 
-### wykobi的使用
+## wykobi的使用
 
-#### 模板
+### 模板
 
 wykobi是一个模板库，所以其编译要考虑模板的编译模型，参考cpp_study.md
 
@@ -22,10 +22,26 @@ wykobi是一个模板库，所以其编译要考虑模板的编译模型，参�
 
   看不到inline的定义，会warning，但程序运行没问题
 
-#### inline
+### inline
 
 发现在大多hpp和inl中，函数都加了inline，而wykobi_instantiate.cpp中的显示实例化中却，没有，尝试添加，编译报错：
 
 `error: explicit instantiation shall not use ‘inline’ specifier [-fpermissive]`
 
 采用显式实例化分离编译模型，其它项目使用libwykobi时，会warning，所以实际应该是把它们当做普通函数处理了，没有inline，所以干脆把hpp中的inline去掉，那样外部项目使用时就不会warning.
+
+## Installation
+
+### seperate complication
+
+```sh
+mkdir build && cd build
+cmake ..
+make -j8
+# install
+sudo make install
+sudo ldconfig
+```
+
+
+
