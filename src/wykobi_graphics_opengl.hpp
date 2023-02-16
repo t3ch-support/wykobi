@@ -4,7 +4,7 @@
 (* Wykobi Computational Geometry Library                               *)
 (* Release Version 0.0.5                                               *)
 (* http://www.wykobi.com                                               *)
-(* Copyright (c) 2005-2017 Arash Partow, All Rights Reserved.          *)
+(* Copyright (c) 2005-2019 Arash Partow, All Rights Reserved.          *)
 (*                                                                     *)
 (* The Wykobi computational geometry library and its components are    *)
 (* supplied under the terms of the open source MIT License.            *)
@@ -105,6 +105,8 @@ namespace wykobi
 
          inline void draw_text(const T& x, const T& y, const std::string& text)
          {
+
+
          }
 
          inline void draw_pixel(const T& x, const T& y) const
@@ -332,7 +334,7 @@ namespace wykobi
          inline void draw(const quadix<T,3>&     quadix) { draw_quadix(quadix[0],quadix[1],quadix[2],quadix[3]); }
          inline void draw(const sphere<T>&       sphere) { draw_sphere(sphere.x,sphere.y,sphere.radius);         }
 
-         inline void draw(const polygon<T,2>& polygon, const bool convex = false)
+         inline void draw(const polygon<T,3>& polygon, const bool convex = false)
          {
             if (polygon.size() < 3) return;
             if (!convex)
@@ -354,14 +356,15 @@ namespace wykobi
                }
                for (std::size_t i = 0; i < polygon.size(); ++i)
                {
-                glVertex3d(polygon[i].x1,polygon[i].y1,polygon[i].z1);
+                glVertex3d(polygon[i].x,polygon[i].y,polygon[i].z);
                }
                glEnd();
             }
          }
 
-         inline void draw(const polygon<T,3>& polygon)
+         inline void draw(const polygon<T,2>& polygon)
          {
+
             if (polygon.size() < 3) return;
             std::size_t j = polygon.size() - 1;
             for (std::size_t i = 0; i < polygon.size(); ++i)
